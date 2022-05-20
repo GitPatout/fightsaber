@@ -4,7 +4,7 @@ import Video from './video';
 import  '/public/video/demo.mp4';
 
 const VIDEO = {
-  src:Robin,
+  src:"/public/video/demo.mp4",
   type:'video/mp4'
  };
 

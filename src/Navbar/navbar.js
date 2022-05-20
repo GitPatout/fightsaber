@@ -15,7 +15,7 @@ export default function navbar() {
           <a href="####"><li className="items">Contact</li></a> 
         </ul>
         
-        <img src="./images/titre.jpeg" alt="image fighter"/>
+        <img src=  "./images/titre.jpeg" alt="image fighter"/>
        
     </nav>
   )
