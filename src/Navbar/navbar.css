@@ -1,0 +1,29 @@
+nav {
+    /* style de navbar  */
+    height:60px;
+    background-color:rgb(33, 47, 60);
+}
+.liste {
+    margin: 0%;
+    /* style de liste bare de commande  */
+    background-color:rgb(33, 47, 60);
+    list-style-type:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    justify-content:flex-end;
+    position:relative;
+    height:100%;
+    
+}
+.items {
+    /* style de lien de la barre menu */
+    margin-right:40px;
+    color:orange;
+    cursor:pointer;
+}
+img {
+    width:100%;
+    height:1000%;
+    object-fit: cover;
+}
