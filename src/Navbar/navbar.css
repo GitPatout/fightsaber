@@ -9,6 +9,8 @@ nav {
   /* style de liste bare de commande  */
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  position: fixed;
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
@@ -35,9 +37,83 @@ nav {
   text-decoration: none;
 }
 
+.navbar_burger{
+width: 40px;
+height: 40px;
+background: transparent;
+border: none;
+color: inherit;
+display: none;
+}
+
+
 img {
   width: 100%;
   height: 1000%;
   object-fit: cover;
   box-shadow: 20px 15px 20px rgb(30, 18, 140);
+}
+@media (max-width:760px){
+  .items {
+
+/* style de lien de la barre menu */
+display: block;
+margin-right: 20px;
+color: orange;
+cursor: pointer;
+width: 100%;
+text-decoration: none;
+}
+
+.items:hover {
+/* style de lien de la barre menu on click*/
+margin-right: 20px;
+background-color: orange;
+color: rgb(33, 47, 60);
+border-radius: 10px;
+text-align:center;
+width: 100%;
+text-decoration: none;
+}
+  
+  .liste {
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 30;
+    height: 100%;
+    padding: 2rem;
+    background-color: rgb(14, 12, 9);
+}
+
+.navbar_burger{
+color: rgb(30, 224, 224);
+}
+.berger_bar,
+.berger_bar::before,
+.berger_bar::after {
+  display: block;
+  width: 40px;
+  height: 3px;
+  position: relative;
+  border: 3px;
+  background: rgb(7, 211, 75);
+}
+.berger_bar::before,
+.berger_bar::after{
+  color: orange;
+content:"";
+position:absolute;
+left: 0;
+}
+.berger_bar::before{
+transform: translateY(-12px);
+}
+.berger_bar::after{
+  transform: translateY(12px);
+
+}
 }

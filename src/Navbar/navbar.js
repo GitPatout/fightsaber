@@ -13,10 +13,11 @@ export default function navbar() {
           <a href="####"><li className="items">Membre</li></a> 
           <a href="####"><li className="items">Notre histoire</li></a> 
           <a href="####"><li className="items">Contact</li></a> 
-        </ul>
-        
+            <button className="navbar_burger">
+               <span className="burger-bar"></span>
+            </button>
         <img src=  "./images/titre.jpeg" alt="image fighter"/>
-       
+        </ul>
     </nav>
   )
 }
