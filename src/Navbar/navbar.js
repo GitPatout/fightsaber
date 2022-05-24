@@ -35,11 +35,11 @@ export default function navbar() {
       </button>
       <div className="liste_container">
         <ul className="liste">
-          <a href="####" onClick={Fermer}><li className="items">Acceuil</li></a> 
-          <a href="####" onClick={Fermer}><li className="items">Information</li></a> 
-          <a href="####" onClick={Fermer}><li className="items">Membre</li></a> 
-          <a href="####" onClick={Fermer}><li className="items">Notre histoire</li></a> 
-          <a href="####" onClick={Fermer}><li className="items">Contact</li></a> 
+          <a href="####" onClick={""}><li className="items">Contact</li></a> 
+          <a href="####" onClick={""}><li className="items">Acceuil</li></a> 
+          <a href="####" onClick={""}><li className="items">Information</li></a> 
+          <a href="####" onClick={""}><li className="items">Membre</li></a> 
+          <a href="####" onClick={""}><li className="items">Notre histoire</li></a> 
            
            </ul>
            </div>
