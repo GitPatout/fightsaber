@@ -23,7 +23,7 @@ nav {
 
 }
 .items {
-  text-align: center;
+
   /* style de lien de la barre menu */
   display: block;
   color: orange;
@@ -127,5 +127,7 @@ nav {
   position: absolute;
   z-index: -1;
 }
-
+.liste.active{
+  background-color: rgb(33 47 60);     
+}
 }
