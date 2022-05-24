@@ -1,23 +1,52 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-// import React, {useState, useEffect} from 'react';
+import React from "react";
+import './navbar.css';
 
 export default function navbar() {
+
+  const Liste = () => {
+    let liste = document.getElementsByClassName('liste');
+    let button = document.getElementsByClassName('btn_burger');
+
+    console.log(liste);
+
+    if (liste[0].className !== 'liste') {
+      liste[0].classList.remove('active');
+      button[0].classList.remove('active');
+    }
+    else {
+    liste[0].classList.add('active');
+    button[0].classList.add('active');
+  }
+}
+
+  const Fermer = () => {
+    let liste = document.getElementsByClassName('liste');
+
+    liste[0].classList.remove('active');
+  }
+  
   return (
     // creation de la liste de la nave barre 
-
     <nav>
+    <button className="btn_burger" onClick={Liste}>
+      <div></div>
+      <div></div>
+      <div></div>
+      </button>
+      <div className="liste_container">
         <ul className="liste">
-          
-          <a href="####"><li className="items">Acceuil</li></a> 
-          <a href="####"><li className="items">Information</li></a> 
-          <a href="####"><li className="items">Membre</li></a> 
-          <a href="####"><li className="items">Notre histoire</li></a> 
-          <a href="####"><li className="items">Contact</li></a> 
-            <button className="navbar_burger">
-               <span className="burger-bar"></span>
-            </button>
-        <img src=  "./images/titre.jpeg" alt="image fighter"/>
-        </ul>
+          <a href="####" onClick={Fermer}><li className="items">Acceuil</li></a> 
+          <a href="####" onClick={Fermer}><li className="items">Information</li></a> 
+          <a href="####" onClick={Fermer}><li className="items">Membre</li></a> 
+          <a href="####" onClick={Fermer}><li className="items">Notre histoire</li></a> 
+          <a href="####" onClick={Fermer}><li className="items">Contact</li></a> 
+           
+           </ul>
+           </div>
+           <div className="image">
+            <img src=  "./images/titre.jpeg" alt="fighter"/>
+            </div>
+           
     </nav>
   )
 }
