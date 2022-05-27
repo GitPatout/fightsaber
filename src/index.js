@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Navbar from './components/Navbar/navbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Acceuil from './components/acceuil/acceuil';
 import Information from './components/information/information';
@@ -13,15 +12,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
 
-    <Navbar />
 
     <Routes>
-     <Route path="/" element={<Acceuil />} />
-     <Route path="information" element={<Information /> } />
-     <Route path="membre" element={<Membres />} />
-     <Route path="histoire" element={<Histoire />} />
-     <Route path="contact" element={<Contact />} />
+      <Route path="/" element={<Acceuil />} />
+      {/* <Route path="information" element={<Information />} />
+      <Route path="membre" element={<Membres />} />
+      <Route path="histoire" element={<Histoire />} />
+      <Route path="contact" element={<Contact />} /> */}
     </Routes>
 
+    <App />
   </BrowserRouter>
 );
